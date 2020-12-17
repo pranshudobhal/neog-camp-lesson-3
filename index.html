@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -23,37 +24,38 @@
 
     <h2>@container</h2>
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container container-fluid">This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
     <hr />
 
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" ref="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr />
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <ul>
+    <p>This list will not have the bullet</p>
+    <ul class="list-non-bullet">
       <li>Item One</li>
       <li>Item Two</li>
       <li>Item Three</li>
     </ul>
 
     <h3>unordered inline list</h3>
-    <ul>
-      <li>Inline Item One</li>
-      <li>Inline Item Two</li>
-      <li>Inline Item Three</li>
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Inline Item One</li>
+      <li class="list-item-inline">Inline Item Two</li>
+      <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
       <li>milk</li>
       <li>eggs</li>
       <li>bread</li>
@@ -62,21 +64,21 @@
     <hr />
 
     <h2>@nav</h2>
-    <nav>
-      <div>iAmBrand</div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Projects</a></li>
-        <li><a href="/">About</a></li>
+    <nav class="navigation container">
+      <div class="nav-brand">iAmBrand</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
+        <li class="list-item-inline"><a class="link" href="/">Projects</a></li>
+        <li class="list-item-inline"><a class="link" href="/">About</a></li>
       </ul>
     </nav>
 
     <hr />
 
     <h2>@header</h2>
-    <header>
-      <img src="images/hero.svg" alt="" />
-      <h1>heading inside hero</h1>
+    <header class="hero">
+      <img class="hero-img" src="images/hero.svg" alt="" />
+      <h1 class="hero-heading">Pranshu Dobhal the <span class="heading-inverted">web developer</span></h1>
     </header>
 
     <hr />
